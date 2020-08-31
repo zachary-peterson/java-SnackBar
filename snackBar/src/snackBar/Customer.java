@@ -46,12 +46,12 @@ public class Customer {
 		this.name = name;
 	}
 
-	public double addCash(double cash) {
-		this.cash = cash;
+	public void addCash(double newCash) {
+		this.cash = this.cash + newCash;
 	}
 
-	public double buySnacks() {
-		return cash;
+	public void buySnacks(double cost, int cart) {
+		this.cash = this.cash - (cost * cart);
 	}
 
 }

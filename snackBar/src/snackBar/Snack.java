@@ -70,12 +70,16 @@ public class Snack {
 		this.quantity = quantity;
 	}
 
-	public int addItem() {
-		return 0 + quantity;
+	public void addItems(int items) {
+		this.quantity = this.quantity + items;
 	}
 
-	public double getTotal() {
-		return quantity * cost;
+	public void buySnacks(int purchasing) {
+		this.quantity = this.quantity - purchasing;
+	}
+
+	public double getTotal(int cart) {
+		return this.cost * cart;
 	}
 
 }
