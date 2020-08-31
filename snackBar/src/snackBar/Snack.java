@@ -17,6 +17,16 @@ public class Snack {
 	private double cost;
 	private int vendingMachId;
 
+	public Snack(int id, String name, int quantity, double cost, int vendingMachId) {
+		maxId++;
+		id = maxId;
+
+		this.name = name;
+		this.quantity = quantity;
+		this.cost = cost;
+		this.vendingMachId = vendingMachId;
+	}
+
 	/*
 	get id
 	set and get name
@@ -62,6 +72,10 @@ public class Snack {
 
 	public int addItem() {
 		return 0 + quantity;
+	}
+
+	public double getTotal() {
+		return quantity * cost;
 	}
 
 }

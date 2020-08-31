@@ -14,6 +14,14 @@ public class Customer {
 	private String name;
 	private double cash;
 
+	public Customer(int id, String name, double cash) {
+		maxId++;
+		id = maxId;
+
+		this.name = name;
+		this.cash = cash;
+	}
+
 	/*
 	get id
 	set and get name
@@ -38,5 +46,12 @@ public class Customer {
 		this.name = name;
 	}
 
-	
+	public double addCash(double cash) {
+		this.cash = cash;
+	}
+
+	public double buySnacks() {
+		return cash;
+	}
+
 }

@@ -12,6 +12,13 @@ public class Vendingmachine {
 	private int id;
 	private String name;
 
+	public Vendingmachine(int id, String name) {
+		maxId++;
+		id = maxId;
+
+		this.name = name;
+	}
+
 	/*
 	get id
 	set and get name
