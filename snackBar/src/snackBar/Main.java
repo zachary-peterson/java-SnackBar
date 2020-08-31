@@ -43,6 +43,16 @@ public class Main {
 
 		Snack soda = new Snack("Soda", 24, 2.50, drink.getId());
 		Snack water = new Snack("Water", 20, 2.75, drink.getId());
+
+		/*
+		* [ ] Customer 1 (Jane) buys 3 of snack 4 (Soda).
+  		* [ ] Print Customer 1 (Jane) Cash on hand.
+  		* [ ] Print quantity of snack 4 (Soda).
+		*/
+
+		jane.buySnacks(3, soda.getCost());
+		soda.buySnacks(3);
+		System.out.println()
 	}
 
 	public static void main(String[] args){
