@@ -14,7 +14,7 @@ public class Customer {
 	private String name;
 	private double cash;
 
-	public Customer(int id, String name, double cash) {
+	public Customer(String name, double cash) {
 		maxId++;
 		id = maxId;
 
@@ -50,8 +50,15 @@ public class Customer {
 		this.cash = this.cash + newCash;
 	}
 
-	public void buySnacks(double cost, int cart) {
-		this.cash = this.cash - (cost * cart);
+	public void buySnacks(double cost) {
+		this.cash = this.cash - cost;
+	}
+
+	@Override
+	public String toString() {
+		String returnString = this.name + " cash on hand is $" + this.cash;
+
+		return returnString;
 	}
 
 }

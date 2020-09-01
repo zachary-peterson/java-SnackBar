@@ -20,9 +20,9 @@ public class Main {
 		Office
 		*/
 
-		Vedingmachine food = new Vedingmachine("Food");
-		Vedingmachine drink = new Vedingmachine("Drink");
-		Vedingmachine office = new Vedingmachine("Office");
+		Vendingmachine food = new Vendingmachine("Food");
+		Vendingmachine drink = new Vendingmachine("Drink");
+		Vendingmachine office = new Vendingmachine("Office");
 
 		/*
 		Snacks in Food:
@@ -50,9 +50,9 @@ public class Main {
   		* [ ] Print quantity of snack 4 (Soda).
 		*/
 
-		jane.buySnacks(3, soda.getCost());
+		jane.buySnacks(soda.getTotal(3));
 		soda.buySnacks(3);
-		System.out.println()
+		System.out.println(jane.getName() + " cash on hand $" + jane.getCash());
 	}
 
 	public static void main(String[] args){

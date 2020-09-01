@@ -12,7 +12,7 @@ public class Vendingmachine {
 	private int id;
 	private String name;
 
-	public Vendingmachine(int id, String name) {
+	public Vendingmachine(String name) {
 		maxId++;
 		id = maxId;
 
