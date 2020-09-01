@@ -54,11 +54,4 @@ public class Customer {
 		this.cash = this.cash - cost;
 	}
 
-	@Override
-	public String toString() {
-		String returnString = this.name + " cash on hand is $" + this.cash;
-
-		return returnString;
-	}
-
 }

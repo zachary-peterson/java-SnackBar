@@ -82,4 +82,9 @@ public class Snack {
 		return this.cost * cart;
 	}
 
+	public double quantityTotalCost() {
+		double grandTotal = (int)this.quantity * (double)this.cost;
+		return grandTotal;
+	}
+
 }

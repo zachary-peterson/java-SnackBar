@@ -35,4 +35,5 @@ public class Vendingmachine {
 	public void setName(String name) {
 		this.name = name;
 	}
+
 }
