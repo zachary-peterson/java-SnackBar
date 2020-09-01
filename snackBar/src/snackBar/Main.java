@@ -45,14 +45,82 @@ public class Main {
 		Snack water = new Snack("Water", 20, 2.75, drink.getId());
 
 		/*
-		* [ ] Customer 1 (Jane) buys 3 of snack 4 (Soda).
-  		* [ ] Print Customer 1 (Jane) Cash on hand.
-  		* [ ] Print quantity of snack 4 (Soda).
+		Customer 1 (Jane) buys 3 of snack 4 (Soda).
+  		Print Customer 1 (Jane) Cash on hand.
+  		Print quantity of snack 4 (Soda).
 		*/
 
+  		System.out.println();
 		jane.buySnacks(soda.getTotal(3));
 		soda.buySnacks(3);
 		System.out.println(jane.getName() + " cash on hand $" + jane.getCash());
+		System.out.println("Quantity of " + soda.getName() + " " + soda.getQuantity());
+
+		/*
+		Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
+		Print Customer 1 (Jane) Cash on hand.
+		Print quantity of snack 3 (Pretzel).
+		*/
+
+		System.out.println();
+		jane.buySnacks(pretzel.getTotal(1));
+		pretzel.buySnacks(1);
+		System.out.println(jane.getName() + " cash on hand $" + jane.getCash());
+		System.out.println("Quantity of " + pretzel.getName() + " " + pretzel.getQuantity());
+
+		/*
+		Customer 2 (Bob) buys 2 of snack 4 (Soda).
+		Print Customer 2 (Bob) Cash on Hand.
+		Print quantity of snack 4 (Soda).
+		*/
+
+		System.out.println();
+		bob.buySnacks(soda.getTotal(2));
+		soda.buySnacks(2);
+		System.out.println(bob.getName() + " cash on hand $" + bob.getCash());
+		System.out.println("Quantity of " + soda.getName() + " " + soda.getQuantity());
+
+		/*
+		Customer 1 (Jane) finds $10.
+		Print Customer 1 (Jane) Cash on Hand.
+		*/
+
+		System.out.println();
+		jane.addCash(10);
+		System.out.println(jane.getName() + " cash on hand $" + jane.getCash());
+
+		/*
+		Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar).
+		Print Customer 1 (Jane) Cash on Hand.
+		Print quantity of snack 2 (Chocolate Bar).
+		*/
+
+		System.out.println();
+		jane.buySnacks(chocolate.getTotal(1));
+		chocolate.buySnacks(1);
+		System.out.println(jane.getName() + " cash on hand $" + jane.getCash());
+		System.out.println("Quantity of " + chocolate.getName() + " " + chocolate.getQuantity());
+
+		/*
+		Add 12 more items to snack 3 (Pretzel).
+		Print quantity of snack 3 (Pretzel).
+		*/
+
+		System.out.println();
+		pretzel.addItems(12);
+		System.out.println("Quantity of " + pretzel.getName() + " " + pretzel.getQuantity());
+
+		/*
+		Customer 2 (Bob) buys 3 of snack 3 (Pretzel).
+		Print Customer 2 (Bob) Cash on hand.
+		Print quantity of snack 3 (Pretzel).
+		*/
+
+		System.out.println();
+		bob.buySnacks(pretzel.getTotal(3));
+		pretzel.buySnacks(3);
+		System.out.println(bob.getName() + " cash on hand $" + bob.getCash());
+		System.out.println("Quantity of " + pretzel.getName() + " " + pretzel.getQuantity());
 	}
 
 	public static void main(String[] args){
